@@ -18,7 +18,7 @@ pipeline {
         stage('Create the image and run the container') {
             steps {
                 sh "sudo docker build -t my-project ."
-                sh "docker run --name my-project -p 90:90 my-project"
+                sh "docker run --name my-project -p 80:80 my-project"
             }
         }
 }
