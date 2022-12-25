@@ -9,9 +9,9 @@ pipeline {
 
         stage('Delete the old image and container') {
             steps {
-                sh "sudo docker container stop my-project"
-                sh "sudo docker container rm my-project"
-                sh "sudo docker image rm my-project"
+                #sh "sudo docker container stop my-project"
+                #sh "sudo docker container rm my-project"
+                #sh "sudo docker image rm my-project"
             }
         }
 
