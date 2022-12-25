@@ -4,8 +4,8 @@ FROM ubuntu:18.04
 RUN apt-get update && apt-get install -y apache2
 COPY . /var/www/html/
 
-# Expose port 80
-EXPOSE 80
+# Expose port 90
+EXPOSE 90
 
 # Start the Apache server
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
